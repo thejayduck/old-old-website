@@ -1,0 +1,21 @@
+.Container {
+  width: 100%;
+  height: 100vh;
+  /* background: radial-gradient(
+    circle,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(2, 0, 36, 1) 79%
+  ); */
+  flex: 1 1;
+}
+
+.scrollUp {
+  position: fixed;
+  right: 50px;
+  bottom: 100px;
+  background-color: var(--primary);
+  backdrop-filter: blur(var(--blur));
+
+  padding: 5px;
+  z-index: 999;
+}
