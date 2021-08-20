@@ -10,7 +10,7 @@ export default function MobileNav({ onExit }) {
             exit={{ opacity: 0 }}
         >
             <ul>
-                <li><a onClick={onExit} href="#"><i className={"fas fa-fw fa-times"} /></a></li>
+                <li><a onClick={onExit} href="#"><i class='bx bx-x' /></a></li>
                 <br />
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>

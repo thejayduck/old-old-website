@@ -42,10 +42,10 @@ export default function PageContainer({ children }) {
                 className={styles.scrollUp}
             >
                 <a href="#">
-                    <i className={"fas fa-fw fa-angle-up"} />
+                    <i class='bx bxs-up-arrow' />
                 </a>
             </motion.div>
-            <Footer />
+            {/* <Footer /> */}
 
             <AnimatePresence>
                 {mobileNav &&

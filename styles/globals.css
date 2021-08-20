@@ -1,13 +1,23 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 
+#__next {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
 :root {
-  --font-large: 2rem;
+  --font-large: 2em;
+  --font-medium: 1.5rem;
   --font-normal: 1rem;
   --font-small: 0.5rem;
 
+  --border: 10px;
   --blur: 10px;
 
-  --accent: hsl(281, 100%, 46%);
+  /* --accent: hsl(281, 100%, 46%); */
+  --accent: hsl(248, 85%, 66%);
   --primary: hsl(0, 0%, 100%, 0.5);
 
   /* #002233 #0066FF */
@@ -15,14 +25,17 @@
 
 html,
 body {
+  user-select: none;
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
   background: rgb(255, 255, 255);
-  /* background-image: url("https://i.ibb.co/MgfQw3V/background-winter.png");
+  /* background-image: url("https://i.ibb.co/MgfQw3V/background-winter.png"); */
+
+  background-image: url("/bg-1.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; */
+  background-attachment: fixed;
 
   font-family: "Source Sans Pro";
   font-size: var(--font-normal);
@@ -33,10 +46,26 @@ a {
   text-decoration: none;
 }
 
+/* section {
+  margin: 0 20px 0 20px;
+} */
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bx {
+  margin: 5px;
+  font-size: var(--font-medium);
+}
+
 * {
   box-sizing: border-box;
 }
 
+/* Scrollbar */
 /* width */
 ::-webkit-scrollbar {
   width: 5px;

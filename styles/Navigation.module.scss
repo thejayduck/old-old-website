@@ -11,7 +11,7 @@
   backdrop-filter: blur(var(--blur));
   user-select: none;
 
-  border-bottom: 2px rgb(232, 232, 232) solid;
+  // border-bottom: 2px rgb(232, 232, 232) solid;
 }
 
 .nav .mobileNav {
@@ -28,23 +28,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  img {
-    display: block;
-    max-width: 32px;
-    max-height: 32px;
-    border-radius: 50%;
-    margin: 5px;
-  }
 }
 
 .nav ul {
   display: flex;
-  list-style-type: none;
   align-items: center;
   justify-content: center;
-  padding: 0;
-  margin: 0;
 }
 
 .nav a {
@@ -64,6 +53,6 @@
     display: none;
   }
   .nav .mobileNav {
-    display: initial;
+    display: inline;
   }
 }

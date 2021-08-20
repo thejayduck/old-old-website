@@ -6,11 +6,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Arda Fevzi Armutcu</title>
-
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        />
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet' />
       </Head>
 
       <Component {...pageProps} />
