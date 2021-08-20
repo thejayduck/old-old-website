@@ -6,8 +6,8 @@ export default function Footer() {
             <div className={styles.container}>
                 <p className={styles.title}>Arda F. Armutcu</p>
                 <ul className={styles.social}>
-                    <li><a title="Twitter" href="#"><i class='bx bxl-twitter' /></a></li>
-                    <li><a title="E-Mail" href="#"><i class='bx bxs-envelope' /></a></li>
+                    <li><a title="Github" href="#"><i className={"bx bxl-github"} /></a></li>
+                    <li><a title="E-Mail" href="#"><i className={"bx bxs-envelope"} /></a></li>
                 </ul>
             </div>
         </footer>

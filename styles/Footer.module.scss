@@ -13,10 +13,6 @@
   user-select: none;
 }
 
-.wave {
-  position: absolute;
-}
-
 .container {
   color: white;
 
@@ -33,9 +29,10 @@
   gap: 30px;
   align-items: center;
   justify-content: center;
+  margin: 20px;
 
   li {
-    // border: 1px solid black;
+    border-radius: var(--border);
     transition: all 0.2s ease-in-out;
   }
 
@@ -50,14 +47,4 @@
     color: black;
     background-color: white;
   }
-}
-
-.container .navigation {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  list-style-type: none;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
 }

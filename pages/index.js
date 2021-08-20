@@ -20,7 +20,7 @@ export default function Homepage() {
           <div className={styles.profileWrap}>
             <Image src={"/profile.png"} width={300} height={300} />
             <ul className={styles.social}>
-              <li><a title="Twitter" href="#"><i className='bx bxl-github' /></a></li>
+              <li><a title="Github" href="#"><i className='bx bxl-github' /></a></li>
               <li><a title="E-Mail" href="#"><i className='bx bxs-envelope' /></a></li>
             </ul>
           </div>

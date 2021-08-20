@@ -8,11 +8,12 @@
   display: grid;
   grid-template-columns: 100%;
   grid-column-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+
   width: calc(100% - 2rem);
   margin-left: 1rem;
   margin-left: 1rem;
 
-  grid-template-columns: repeat(2, 1fr);
   text-align: initial;
   align-items: center;
 }
@@ -47,7 +48,6 @@
 
 .introductionWrap {
   height: calc(100vh - 3rem);
-  row-gap: 1rem;
   font-size: var(--font-large);
   display: flex;
   justify-content: center;

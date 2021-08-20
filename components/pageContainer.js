@@ -41,7 +41,7 @@ export default function PageContainer({ children }) {
                     className={styles.scrollUp}
                 >
                     <a href="#home">
-                        <i class='bx bxs-up-arrow' />
+                        <i class={"bx bxs-up-arrow"} />
                     </a>
                 </motion.div>
             </main>
