@@ -46,13 +46,11 @@ export default function PageContainer({ children }) {
                 </motion.div>
             </main>
             <Footer />
-
             <AnimatePresence>
                 {mobileNav &&
                     <MobileNav onExit={() => setMobileNav(false)} />
                 }
             </AnimatePresence>
-
         </>
     );
 }

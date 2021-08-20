@@ -36,7 +36,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  backdrop-filter: blur(var(--blur));
 
   font-family: "Source Sans Pro";
   font-size: var(--font-normal);
