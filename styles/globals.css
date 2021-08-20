@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 
 :root {
-  --font-larger: 32px;
-  --font-large: 21px;
-  --font-normal: 16px;
-  --font-small: 12px;
+  --font-large: 2rem;
+  --font-normal: 1rem;
+  --font-small: 0.5rem;
 
   --blur: 10px;
 
   --accent: hsl(281, 100%, 46%);
   --primary: hsl(0, 0%, 100%, 0.5);
+
+  /* #002233 #0066FF */
 }
 
 html,
@@ -17,11 +18,11 @@ body {
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
-  background: rgb(1, 1, 88);
-  background-image: url("https://i.ibb.co/MgfQw3V/background-winter.png");
+  background: rgb(255, 255, 255);
+  /* background-image: url("https://i.ibb.co/MgfQw3V/background-winter.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; */
 
   font-family: "Source Sans Pro";
   font-size: var(--font-normal);

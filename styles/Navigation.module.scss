@@ -10,7 +10,10 @@
 
   backdrop-filter: blur(var(--blur));
   user-select: none;
+
+  border-bottom: 2px rgb(232, 232, 232) solid;
 }
+
 .nav .mobileNav {
   display: none;
 }
@@ -25,14 +28,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.nav .container .titleWrap img {
-  display: block;
-  max-width: 32px;
-  max-height: 32px;
-  border-radius: 50%;
-  margin: 5px;
+  img {
+    display: block;
+    max-width: 32px;
+    max-height: 32px;
+    border-radius: 50%;
+    margin: 5px;
+  }
 }
 
 .nav ul {
@@ -41,6 +44,7 @@
   align-items: center;
   justify-content: center;
   padding: 0;
+  margin: 0;
 }
 
 .nav a {

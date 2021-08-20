@@ -1,9 +1,10 @@
-import styles from '../styles/PageContainer.module.css'
+import styles from '../styles/PageContainer.module.scss'
 import Footer from './footer';
 import Navigation from './navbar';
 import MobileNav from './mobileNav';
+
 import { useEffect, useState } from 'react';
-import { AnimatePresence, motion, useTransform, useViewportScroll } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 
 export default function PageContainer({ children }) {
     const [mobileNav, setMobileNav] = useState(false);
@@ -30,17 +31,20 @@ export default function PageContainer({ children }) {
     return (
         <>
             <Navigation onBurgerMenuClick={() => setMobileNav(prev => !prev)} />
-            <main className={styles.Container}>
+            <main className={styles.container}>
                 {children}
-                <motion.div
-                    animate={{ opacity: showScroll ? 0 : 1 }}
-                    className={styles.scrollUp}
-                >
-                    <a href="#">
-                        <i className={"fas fa-fw fa-angle-up"} />
-                    </a>
-                </motion.div>
             </main>
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: showScroll ? 0 : 1 }}
+                transition={{ opacity: { duration: 0.2 } }}
+
+                className={styles.scrollUp}
+            >
+                <a href="#">
+                    <i className={"fas fa-fw fa-angle-up"} />
+                </a>
+            </motion.div>
             <Footer />
 
             <AnimatePresence>
