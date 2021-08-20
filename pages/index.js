@@ -33,26 +33,29 @@ export default function Homepage() {
             <Image className={styles.image} src={"/profile_2.png"} width={320} height={420} />
           </div>
           <div className={styles.about}>
-            <div>
-              <h2>I am Arda Fevzi Armutcu</h2>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>
-            </div>
+            <h2>I am Arda Fevzi Armutcu</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate cum expedita quo culpa tempora, assumenda,
+              quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis!
+              Recusandae alias accusamus atque.
+            </p>
           </div>
         </section>
 
         {/* SKILLS */}
         <h2 className={styles.sectionTitle}>Skills</h2>
         <section id="skills" className={`${styles.section} ${styles.grid}`}>
-          <SkillBar percentage={85} title="JavaScript" icon={"bx bxl-javascript"} />
+          <SkillBar percentage={80} title="JavaScript" icon={"bx bxl-javascript"} />
           <SkillBar percentage={60} title="PHP" icon={"bx bxl-php"} />
-          <SkillBar percentage={65} title="UX/UI" icon={"bx bxs-paint"} />
+          <SkillBar percentage={65} title="Design" icon={"bx bxs-paint"} />
           <SkillBar percentage={50} title="Art" icon={"bx bxs-pen"} />
         </section>
 
         {/* PROJECTS */}
-        <h2 className={styles.sectionTitle}>Work</h2>
-        <section id="work" className={`${styles.section} ${styles.grid}`}>
-          <h2>Coming Soon...</h2>
+        <h2 className={styles.sectionTitle}>Works</h2>
+        <section id="works" className={`${styles.section} ${styles.grid}`}>
+          <h2>Work in Progress...</h2>
         </section>
       </div>
     </PageContainer >

@@ -25,11 +25,12 @@
 
 html,
 body {
+  scroll-padding-top: 50px;
+
   user-select: none;
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
-  background: rgb(255, 255, 255);
   /* background-image: url("https://i.ibb.co/MgfQw3V/background-winter.png"); */
 
   background-image: url("/bg-1.svg");

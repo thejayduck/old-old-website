@@ -33,18 +33,18 @@ export default function PageContainer({ children }) {
             <Navigation onBurgerMenuClick={() => setMobileNav(prev => !prev)} />
             <main className={styles.container}>
                 {children}
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: showScroll ? 0 : 1 }}
-                    transition={{ opacity: { duration: 0.2 } }}
-
-                    className={styles.scrollUp}
-                >
-                    <a href="#home">
-                        <i class={"bx bxs-up-arrow"} />
-                    </a>
-                </motion.div>
             </main>
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: showScroll ? 0 : 1 }}
+                transition={{ opacity: { duration: 0.2 } }}
+
+                className={styles.scrollUp}
+            >
+                <a href="#home">
+                    <i class={"bx bxs-up-arrow"} />
+                </a>
+            </motion.div>
             <Footer />
             <AnimatePresence>
                 {mobileNav &&

@@ -9,6 +9,7 @@
   border-radius: 0.5rem;
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
   overflow: hidden;
+  background-color: white;
 }
 .nameWrap {
   display: flex;
@@ -27,6 +28,6 @@
   left: 0;
   bottom: 0;
   background-color: var(--accent);
-  height: 0.5rem;
+  height: 0.25rem;
   border-radius: var(--border);
 }
