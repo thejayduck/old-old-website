@@ -12,7 +12,7 @@
   right: 0;
   bottom: 0;
 
-  z-index: 5;
+  z-index: var(--z-front);
 
   background-color: var(--primary);
   backdrop-filter: blur(var(--blur));

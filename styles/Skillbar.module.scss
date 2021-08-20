@@ -1,0 +1,32 @@
+.skillWrap {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  align-items: center;
+  position: relative;
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
+  overflow: hidden;
+}
+.nameWrap {
+  display: flex;
+}
+.icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: var(--accent);
+}
+.title {
+  display: flex;
+  align-items: center;
+}
+.bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: var(--accent);
+  height: 0.5rem;
+  border-radius: var(--border);
+}

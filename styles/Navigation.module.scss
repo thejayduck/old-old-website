@@ -1,15 +1,18 @@
 .nav {
-  position: relative;
+  position: sticky;
 
   background-color: var(--primary);
+  backdrop-filter: blur(var(--blur));
+
   top: 0;
   left: 0;
   right: 0;
-  padding: 0 20px 0 20px;
+  padding: 20px;
   transition: all 0.3s ease-in-out;
 
-  backdrop-filter: blur(var(--blur));
   user-select: none;
+
+  z-index: var(--z-front);
 
   // border-bottom: 2px rgb(232, 232, 232) solid;
 }
@@ -41,11 +44,11 @@
   text-decoration: none;
   padding: 7px 15px;
   font-weight: bold;
-  transition: 230ms ease-in-out;
+  // transition: 230ms ease-in-out;
 }
 
 .nav a:hover {
-  color: var(--accent);
+  border-bottom: 3px var(--accent) solid;
 }
 
 @media screen and (max-width: 720px) {
