@@ -62,23 +62,9 @@
   }
 
   .profileWrap ul {
-    background-color: white;
-
-    color: black;
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    justify-content: center;
     border-radius: var(--border);
     box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
-
-    li {
-      transition: 0.2s ease-in-out;
-    }
-    li:hover {
-      color: var(--accent);
-      // background-color: white;
-    }
+    background-color: white;
   }
 }
 

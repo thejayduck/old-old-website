@@ -1,16 +1,32 @@
 import styles from '../styles/Skillbar.module.scss'
+import { motion } from "framer-motion"
 
 export default function SkillBar({ title, icon, percentage }) {
     return (
-        <div className={styles.skillWrap}>
+        <motion.div
+            className={styles.skillWrap}
+
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+        >
             <div className={styles.nameWrap}>
                 <i className={`${icon} ${styles.icon}`} />
                 <span className={styles.title}>{title}</span>
             </div>
-            <div style={{ width: `${percentage}%` }} className={styles.bar} />
+            <motion.div
+                className={styles.bar}
+
+                initial={{
+                    width: 0,
+                }}
+                animate={{
+                    width: `${percentage}%`
+                }}
+                transition={{ type: "spring", duration: 1 }}
+            />
             <div>
                 <span className={styles.percentage}>{percentage}%</span>
             </div>
-        </div>
+        </motion.div>
     );
 }

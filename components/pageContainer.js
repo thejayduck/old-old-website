@@ -41,8 +41,8 @@ export default function PageContainer({ children }) {
 
                 className={styles.scrollUp}
             >
-                <a href="#home">
-                    <i class={"bx bxs-up-arrow"} />
+                <a aria-label="Scroll Up" href="#home">
+                    <i className={"bx bxs-up-arrow"} />
                 </a>
             </motion.div>
             <Footer />

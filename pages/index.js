@@ -1,11 +1,20 @@
 import styles from "../styles/Home.module.scss"
 
 import PageContainer from "../components/pageContainer"
-import SkillBar from "../components/skillBar"
 
 import Image from 'next/image'
+import useInView from "react-cool-inview"
+import dynamic from 'next/dynamic'
+
+const SkillBar = dynamic(() => import("../components/skillBar"))
+const Project = dynamic(() => import("../components/project"))
 
 export default function Homepage() {
+
+  const { observe, inView } = useInView({
+    onEnter: ({ unobserve }) => unobserve(),
+  });
+
   return (
     <PageContainer>
       <div className={styles.sectionWrap}>
@@ -18,10 +27,10 @@ export default function Homepage() {
             Programmer
           </h1>
           <div className={styles.profileWrap}>
-            <Image src={"/profile.png"} width={300} height={300} />
+            <Image alt={"That's me"} src={"/profile.png"} width={300} height={300} />
             <ul className={styles.social}>
-              <li><a title="Github" href="#"><i className='bx bxl-github' /></a></li>
-              <li><a title="E-Mail" href="#"><i className='bx bxs-envelope' /></a></li>
+              <li><a aria-label="Github" title="Github" href="#"><i className='bx bxl-github' /></a></li>
+              <li><a aria-label="E-Mail" title="E-Mail" href="#"><i className='bx bxs-envelope' /></a></li>
             </ul>
           </div>
         </section>
@@ -30,7 +39,7 @@ export default function Homepage() {
         <h2 className={styles.sectionTitle}>About</h2>
         <section id="about" className={`${styles.section} ${styles.grid}`}>
           <div className={styles.imageWrap}>
-            <Image className={styles.image} src={"/profile_2.png"} width={320} height={420} />
+            <Image alt={"That's also me"} className={styles.image} src={"/profile_2.png"} width={320} height={420} />
           </div>
           <div className={styles.about}>
             <h2>I am Arda Fevzi Armutcu</h2>
@@ -45,17 +54,26 @@ export default function Homepage() {
 
         {/* SKILLS */}
         <h2 className={styles.sectionTitle}>Skills</h2>
-        <section id="skills" className={`${styles.section} ${styles.grid}`}>
-          <SkillBar percentage={80} title="JavaScript" icon={"bx bxl-javascript"} />
-          <SkillBar percentage={60} title="PHP" icon={"bx bxl-php"} />
-          <SkillBar percentage={65} title="Design" icon={"bx bxs-paint"} />
-          <SkillBar percentage={50} title="Art" icon={"bx bxs-pen"} />
+        <section id="skills" className={`${styles.section} ${styles.grid}`} ref={observe}>
+          {inView &&
+            <>
+              <SkillBar percentage={80} title="JavaScript" icon={"bx bxl-javascript"} />
+              <SkillBar percentage={60} title="PHP" icon={"bx bxl-php"} />
+              <SkillBar percentage={65} title="Design" icon={"bx bxs-paint"} />
+              <SkillBar percentage={50} title="Art" icon={"bx bxs-pen"} />
+            </>
+          }
         </section>
 
         {/* PROJECTS */}
         <h2 className={styles.sectionTitle}>Works</h2>
-        <section id="works" className={`${styles.section} ${styles.grid}`}>
-          <h2>Work in Progress...</h2>
+        <section id="works" className={`${styles.section} ${styles.grid}`} ref={observe}>
+          {inView &&
+            <>
+              <Project />
+              <Project />
+            </>
+          }
         </section>
       </div>
     </PageContainer >
