@@ -7,7 +7,10 @@ function MyApp({ Component, pageProps }) {
       <Head>
 
         <html lang="en" />
+
         <title>Arda Fevzi Armutcu</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Arda F. Armutcu's Personal Portfolio" />
         <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet' />
         <link rel="preload" as="font" />

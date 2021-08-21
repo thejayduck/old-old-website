@@ -41,8 +41,8 @@ export default function Homepage({ data }) {
           <div className={styles.profileWrap}>
             <Image alt={"That's me"} src={"/profile.png"} width={300} height={300} />
             <ul className={styles.social}>
-              <li><a aria-label="Github" title="Github" href="#"><i className='bx bxl-github' /></a></li>
-              <li><a aria-label="E-Mail" title="E-Mail" href="#"><i className='bx bxs-envelope' /></a></li>
+              <li><a aria-label="Github" title="Github" href="https://github.com/thejayduck" rel="noreferrer"><i className='bx bxl-github' /></a></li>
+              <li><a aria-label="E-Mail" title="E-Mail" href="mailto:ardafevzi.armutcu@gmail.com"><i className='bx bxs-envelope' /></a></li>
             </ul>
           </div>
         </section>
@@ -53,8 +53,8 @@ export default function Homepage({ data }) {
           <div className={styles.imageWrap}>
             <Image alt={"That's also me"} className={styles.image} src={"/profile_2.png"} width={320} height={420} />
           </div>
-          <div className={styles.about}>
-            <h2>I am Arda Fevzi Armutcu</h2>
+          <div>
+            <h2>Yup that's me, Arda Fevzi Armutcu</h2>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Voluptate cum expedita quo culpa tempora, assumenda,
@@ -69,6 +69,7 @@ export default function Homepage({ data }) {
         <section id="skills" className={`${styles.section} ${styles.grid}`}>
           {inView &&
             <>
+              <SkillBar percentage={90} title="C#" icon={"bx bx-code"} />
               <SkillBar percentage={80} title="JavaScript" icon={"bx bxl-javascript"} />
               <SkillBar percentage={60} title="PHP" icon={"bx bxl-php"} />
               <SkillBar percentage={65} title="Design" icon={"bx bxs-paint"} />

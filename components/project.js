@@ -7,7 +7,7 @@ export default function Project({ data }) {
     const [showDetails, setShowDetails] = useState(false);
 
     return (
-        <motion.div onClick={() => setShowDetails(prev => !prev)} className={styles.projectWrap}>
+        <motion.div title={showDetails ? "Shrink Details" : "Expand Details"} onClick={() => setShowDetails(prev => !prev)} className={styles.projectWrap}>
             <div className={styles.social} >
                 <ul>
                     {
@@ -26,15 +26,17 @@ export default function Project({ data }) {
                 </ul>
             </div>
 
-            <Image
-                alt={`${data.title} Cover`}
-                className={styles.image}
-                height={256}
-                width={500}
-                objectFit="cover"
-                src={data.image}
+            <div className={styles.imageWrap}>
+                <Image
+                    className={styles.image}
+                    alt={`${data.title} Cover`}
+                    height={256}
+                    width={500}
+                    objectFit="cover"
+                    src={data.image}
 
-            />
+                />
+            </div>
             <motion.div
                 className={styles.showDetails}
 

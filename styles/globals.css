@@ -17,6 +17,7 @@
 
   /* --accent: hsl(281, 100%, 46%); */
   --accent: hsl(248, 85%, 66%);
+  --accent-dark: hsl(248, 85%, 60%);
   --primary: hsl(0, 0%, 100%, 0.5);
   --footer: rgb(0, 0, 0);
 
@@ -25,7 +26,7 @@
 
 html,
 body {
-  scroll-padding-top: 50px;
+  scroll-padding-top: 150px;
 
   user-select: none;
   scroll-behavior: smooth;
@@ -98,10 +99,10 @@ li:hover {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: var(--accent);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: var(--accent-dark);
 }

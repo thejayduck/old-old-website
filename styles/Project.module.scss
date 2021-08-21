@@ -1,5 +1,4 @@
 .projectWrap {
-  cursor: pointer;
   height: auto;
   position: relative;
   border-radius: 0.5rem;
@@ -8,12 +7,17 @@
   margin-bottom: 2rem;
   background-color: white;
 
-  .image {
-    position: absolute;
-    top: 0;
-    transition: 0.2s ease-in-out;
+  .imageWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    .image {
+      position: absolute;
+      top: 0;
+      transition: 0.2s ease-in-out;
+    }
   }
-
   .showDetails {
     position: absolute;
     right: 0;
@@ -31,10 +35,15 @@
     background-color: white;
     position: absolute;
     z-index: var(--z-front);
+
+    ul {
+      gap: 0;
+    }
   }
 }
 
-.projectWrap:hover {
+.projectWrap:hover,
+.projectWrap:active {
   .image {
     transform: scale(1.05);
   }

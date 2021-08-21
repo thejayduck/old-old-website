@@ -6,6 +6,8 @@ export default function SkillBar({ title, icon, percentage }) {
         <motion.div
             className={styles.skillWrap}
 
+            title={`${title} - ${percentage}%`}
+
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
         >

@@ -35,5 +35,6 @@
 }
 
 .navigation a:hover {
-  color: #a200ec;
+  color: var(--accent);
+  border-bottom: 3px var(--accent) solid;
 }
