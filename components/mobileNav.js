@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import styles from '../styles/MobileNav.module.css'
+import styles from '../styles/MobileNav.module.scss'
 
 export default function MobileNav({ onExit }) {
     return (
