@@ -10,15 +10,29 @@
   box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
   overflow: hidden;
   background-color: white;
+  transition: 0.5s cubic-bezier(0.47, 1.64, 0.41, 0.8);
+
+  &:hover,
+  &:active {
+    transform: scale(1.05);
+    .icon {
+      transform: rotate(360deg);
+    }
+  }
+
+  .nameWrap {
+    display: flex;
+
+    .icon {
+      font-size: 2rem;
+      margin-right: 1rem;
+      color: var(--accent);
+
+      transition: 0.5s cubic-bezier(0.47, 1.64, 0.41, 0.8);
+    }
+  }
 }
-.nameWrap {
-  display: flex;
-}
-.icon {
-  font-size: 2rem;
-  margin-right: 1rem;
-  color: var(--accent);
-}
+
 .title {
   display: flex;
   align-items: center;

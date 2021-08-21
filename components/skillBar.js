@@ -9,10 +9,12 @@ export default function SkillBar({ title, icon, percentage }) {
             title={`${title} - ${percentage}%`}
 
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            animate={{ opacity: 1, transition: { delay: 0.5 } }}
         >
             <div className={styles.nameWrap}>
-                <i className={`${icon} ${styles.icon}`} />
+                <i
+                    className={`${icon} ${styles.icon}`}
+                />
                 <span className={styles.title}>{title}</span>
             </div>
             <motion.div
@@ -24,7 +26,12 @@ export default function SkillBar({ title, icon, percentage }) {
                 animate={{
                     width: `${percentage}%`
                 }}
-                transition={{ type: "spring", duration: 1 }}
+                transition=
+                {{
+                    type: "spring",
+                    duration: 1,
+                    delay: 0.5
+                }}
             />
             <div>
                 <span className={styles.percentage}>{percentage}%</span>

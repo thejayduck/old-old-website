@@ -40,11 +40,11 @@
       gap: 0;
     }
   }
-}
 
-.projectWrap:hover,
-.projectWrap:active {
-  .image {
-    transform: scale(1.05);
+  &:hover,
+  &:active {
+    .image {
+      transform: scale(1.05);
+    }
   }
 }
