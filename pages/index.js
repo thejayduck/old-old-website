@@ -9,7 +9,19 @@ import dynamic from 'next/dynamic'
 const SkillBar = dynamic(() => import("../components/skillBar"))
 const Project = dynamic(() => import("../components/project"))
 
-export default function Homepage() {
+export async function getStaticProps() {
+  const res = await fetch('https://gist.githubusercontent.com/thejayduck/274ef60be752e3bcd3dc677dc3423933/raw')
+  const data = await res.json();
+
+  return {
+    props: {
+      data
+    },
+    revalidate: 10
+  }
+}
+
+export default function Homepage({ data }) {
 
   const { observe, inView } = useInView({
     onEnter: ({ unobserve }) => unobserve(),
@@ -54,7 +66,7 @@ export default function Homepage() {
 
         {/* SKILLS */}
         <h2 className={styles.sectionTitle}>Skills</h2>
-        <section id="skills" className={`${styles.section} ${styles.grid}`} ref={observe}>
+        <section id="skills" className={`${styles.section} ${styles.grid}`}>
           {inView &&
             <>
               <SkillBar percentage={80} title="JavaScript" icon={"bx bxl-javascript"} />
@@ -68,11 +80,10 @@ export default function Homepage() {
         {/* PROJECTS */}
         <h2 className={styles.sectionTitle}>Works</h2>
         <section id="works" className={`${styles.section} ${styles.grid}`} ref={observe}>
-          {inView &&
-            <>
-              <Project />
-              <Project />
-            </>
+          {
+            data.map(q =>
+              <Project key={q.title} data={q} />
+            )
           }
         </section>
       </div>

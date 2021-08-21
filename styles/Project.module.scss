@@ -25,6 +25,13 @@
     padding: 10px;
     text-align: center;
   }
+
+  .social {
+    border-radius: 0 0 var(--border) 0;
+    background-color: white;
+    position: absolute;
+    z-index: var(--z-front);
+  }
 }
 
 .projectWrap:hover {

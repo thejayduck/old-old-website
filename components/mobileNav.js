@@ -16,8 +16,7 @@ export default function MobileNav({ onExit }) {
                 <li><a aria-label="About" onClick={onExit} href="#about">About</a></li>
                 <li><a aria-label="Skills" onClick={onExit} href="#skills">Skills</a></li>
                 <li><a aria-label="Works" onClick={onExit} href="#works">Works</a></li>
-                <li><a aria-label="Drawings" onClick={onExit} href="#">Drawings</a></li>
-                <li><a aria-label="Contact" onClick={onExit} href="#">Contact</a></li>
+                {/* <li><a aria-label="Contact" onClick={onExit} href="#">Contact</a></li> */}
             </ul>
         </motion.nav>
     )

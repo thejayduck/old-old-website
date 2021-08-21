@@ -3,18 +3,36 @@ import Image from 'next/image'
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 
-export default function Project({ title, description }) {
+export default function Project({ data }) {
     const [showDetails, setShowDetails] = useState(false);
 
     return (
         <motion.div onClick={() => setShowDetails(prev => !prev)} className={styles.projectWrap}>
+            <div className={styles.social} >
+                <ul>
+                    {
+                        data.links.map(q =>
+                            <li key={q.title}>
+                                <a
+                                    aria-label={q.title}
+                                    title={q.title}
+                                    href={q.url}
+                                    className={q.icon}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                />
+                            </li>)
+                    }
+                </ul>
+            </div>
+
             <Image
-                alt={`${title} Cover`}
+                alt={`${data.title} Cover`}
                 className={styles.image}
                 height={256}
                 width={500}
                 objectFit="cover"
-                src={"/work5.jpg"}
+                src={data.image}
 
             />
             <motion.div
@@ -26,7 +44,7 @@ export default function Project({ title, description }) {
                 <i className='bx bxs-down-arrow' />
             </motion.div>
             <div className={styles.details}>
-                <h2>{title ?? "No Title"}</h2>
+                <h2>{data.title ?? "No Title"}</h2>
                 <AnimatePresence>
                     {showDetails &&
                         <motion.div
@@ -36,15 +54,8 @@ export default function Project({ title, description }) {
                             exit={{ height: 0, opacity: 0 }}
                         >
                             <p>
-                                {description}
+                                {data.description}
                             </p>
-                            <div className={styles.social} >
-                                <span>Find It On:</span>
-                                <ul>
-                                    <li><a aria-label="Github" title="Github" href="#"><i className='bx bxl-github' /></a></li>
-                                    <li><a aria-label="E-Mail" title="E-Mail" href="#"><i className='bx bxs-envelope' /></a></li>
-                                </ul>
-                            </div>
                         </motion.div>
                     }
                 </AnimatePresence>

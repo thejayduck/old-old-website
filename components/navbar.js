@@ -13,7 +13,7 @@ export default function Navigation({ onBurgerMenuClick }) {
                     <li><a aria-label="About" href="#about">About</a></li>
                     <li><a aria-label="Skills" href="#skills">Skills</a></li>
                     <li><a aria-label="Works" href="#works">Works</a></li>
-                    <li><a aria-label="Drawings" href="#">Drawings</a></li>
+                    {/* <li><a aria-label="Contact" href="#">Contact</a></li> */}
                 </ul>
                 <a onClick={onBurgerMenuClick} className={styles.mobileNav} href="#"><i className={"bx bx-menu"} /></a>
             </div>
