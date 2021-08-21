@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
 
 :root {
+  --font-larger: 2.5em;
   --font-large: 2em;
   --font-medium: 1.5rem;
   --font-normal: 1rem;
