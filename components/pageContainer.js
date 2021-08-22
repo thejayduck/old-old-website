@@ -41,6 +41,7 @@ export default function PageContainer({ children }) {
                 transition={{ opacity: { duration: 0.2 } }}
 
                 className={styles.scrollUp}
+                title={"Scroll Up"}
             >
                 <a aria-label="Scroll Up" href="#home">
                     <i className={"bx bxs-up-arrow"} />
