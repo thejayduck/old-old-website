@@ -96,7 +96,7 @@ export default function Homepage({ data }) {
         <section id="skills" className={`${styles.section} ${styles.grid}`}>
           {inView &&
             skills.map(q =>
-              <SkillBar key={q} data={q} />
+              <SkillBar key={q.title} data={q} />
             )
           }
         </section>

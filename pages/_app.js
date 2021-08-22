@@ -1,6 +1,17 @@
 import Head from 'next/head'
 import '../styles/globals.css'
 
+export function scrollToAnchor(hashId) {
+  const element = document.querySelector(hashId);
+
+  if (element) {
+    element.scrollIntoView({
+      block: 'start',
+      inline: 'nearest',
+    });
+  }
+}
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
