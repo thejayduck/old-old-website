@@ -1,4 +1,5 @@
 import styles from '../styles/Project.module.scss'
+
 import Image from 'next/image'
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -54,6 +55,7 @@ export default function Project({ data }) {
                             initial={{ height: 0, opacity: 0 }}
                             animate={{ height: "max-content", opacity: 1 }}
                             exit={{ height: 0, opacity: 0 }}
+                            transition={{ type: "spring" }}
                         >
                             <p>
                                 {data.description}

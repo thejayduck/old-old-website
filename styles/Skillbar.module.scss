@@ -22,11 +22,12 @@
 
   .nameWrap {
     display: flex;
+    z-index: var(--z-front);
+    color: var(--accent);
 
     .icon {
       font-size: 2rem;
       margin-right: 1rem;
-      color: var(--accent);
 
       transition: 0.5s cubic-bezier(0.47, 1.64, 0.41, 0.8);
     }
@@ -43,5 +44,5 @@
   bottom: 0;
   background-color: var(--accent);
   height: 0.25rem;
-  border-radius: var(--border);
+  border-radius: 0 var(--border) var(--border) 0;
 }
