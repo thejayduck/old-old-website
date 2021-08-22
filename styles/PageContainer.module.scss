@@ -19,8 +19,7 @@
   position: fixed;
   right: 50px;
   bottom: 50px;
-  background-color: var(--primary);
-  backdrop-filter: blur(var(--blur));
+  background-color: white;
   overflow: hidden;
 
   z-index: var(--z-front);
