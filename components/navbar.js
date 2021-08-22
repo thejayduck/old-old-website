@@ -7,9 +7,7 @@ export default function Navigation({ onBurgerMenuClick }) {
     return (
         <nav id="navbar" className={styles.nav}>
             <div className={styles.container}>
-                <div className={styles.titleWrap}>
-                    <h1>Arda Fevzi Armutcu</h1>
-                </div>
+                <h1>Arda Fevzi Armutcu</h1>
                 <ul className={styles.linkWrap}>
                     <li><a aria-label="Home" onClick={() => scrollToAnchor("#home")}>Home</a></li>
                     <li><a aria-label="About" onClick={() => scrollToAnchor("#about")}>About</a></li>

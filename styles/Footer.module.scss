@@ -11,40 +11,40 @@
 
   padding: 2rem 0;
   user-select: none;
-}
 
-.container {
-  color: white;
+  .container {
+    color: white;
 
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
-  .title {
-    font-size: var(--font-medium);
-  }
-}
-
-.container .social {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-  justify-content: center;
-  margin: 20px;
-  color: white;
-  li {
-    border-radius: var(--border);
-    transition: all 0.2s ease-in-out;
-
-    &:hover {
-      color: black;
-      background-color: white;
+    .title {
+      font-size: var(--font-medium);
     }
-  }
 
-  li a {
-    padding: 5px;
-    display: inline-block;
-    width: 100%;
-    height: 100%;
+    .social {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      justify-content: center;
+      margin: 20px;
+      color: white;
+      li {
+        border-radius: var(--border);
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          color: black;
+          background-color: white;
+        }
+      }
+
+      li a {
+        padding: 5px;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }

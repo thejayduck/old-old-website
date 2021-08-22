@@ -32,14 +32,14 @@ const skills = [
     icon: "bx bxl-javascript",
   },
   {
-    title: "PHP",
-    percentage: "60",
-    icon: "bx bxl-php",
-  },
-  {
     title: "Design",
     percentage: "65",
     icon: "bx bxs-paint",
+  },
+  {
+    title: "PHP",
+    percentage: "60",
+    icon: "bx bxl-php",
   },
   {
     title: "Art",
@@ -68,7 +68,7 @@ export default function Homepage({ data }) {
           <div className={styles.profileWrap}>
             <img alt={"That's me"} src={"/profile.png"} width={350} height={350} />
             <ul className={styles.social}>
-              <li><a aria-label="Github" title="Github" href="https://github.com/thejayduck" rel="noreferrer"><i className='bx bxl-github' /></a></li>
+              <li><a aria-label="Github" target="_blank" title="Github" href="https://github.com/thejayduck" rel="noreferrer"><i className='bx bxl-github' /></a></li>
               <li><a aria-label="E-Mail" title="E-Mail" href="mailto:ardafevzi.armutcu@gmail.com"><i className='bx bxs-envelope' /></a></li>
             </ul>
           </div>

@@ -25,6 +25,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="description" content="Arda F. Armutcu's Personal Portfolio" />
         <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet' />
         <link rel="preload" as="font" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Component {...pageProps} />
