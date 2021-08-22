@@ -21,6 +21,34 @@ export async function getStaticProps() {
   }
 }
 
+const skills = [
+  {
+    title: "C#",
+    percentage: "90",
+    icon: "bx bx-code",
+  },
+  {
+    title: "JavaScript",
+    percentage: "80",
+    icon: "bx bxl-javascript",
+  },
+  {
+    title: "PHP",
+    percentage: "60",
+    icon: "bx bxl-php",
+  },
+  {
+    title: "Design",
+    percentage: "65",
+    icon: "bx bxs-paint",
+  },
+  {
+    title: "Art",
+    percentage: "50",
+    icon: "bx bxs-pen",
+  }
+]
+
 export default function Homepage({ data }) {
 
   const { observe, inView } = useInView({
@@ -39,7 +67,7 @@ export default function Homepage({ data }) {
             Programmer
           </h1>
           <div className={styles.profileWrap}>
-            <Image alt={"That's me"} src={"/profile.png"} width={300} height={300} />
+            <Image alt={"That's me"} src={"/profile.png"} width={400} height={400} />
             <ul className={styles.social}>
               <li><a aria-label="Github" title="Github" href="https://github.com/thejayduck" rel="noreferrer"><i className='bx bxl-github' /></a></li>
               <li><a aria-label="E-Mail" title="E-Mail" href="mailto:ardafevzi.armutcu@gmail.com"><i className='bx bxs-envelope' /></a></li>
@@ -68,20 +96,16 @@ export default function Homepage({ data }) {
         <h2 className={styles.sectionTitle}>Skills</h2>
         <section id="skills" className={`${styles.section} ${styles.grid}`}>
           {inView &&
-            <>
-              <SkillBar percentage={90} title="C#" icon={"bx bx-code"} />
-              <SkillBar percentage={80} title="JavaScript" icon={"bx bxl-javascript"} />
-              <SkillBar percentage={60} title="PHP" icon={"bx bxl-php"} />
-              <SkillBar percentage={65} title="Design" icon={"bx bxs-paint"} />
-              <SkillBar percentage={50} title="Art" icon={"bx bxs-pen"} />
-            </>
+            skills.map(q =>
+              <SkillBar data={q} />
+            )
           }
         </section>
 
         {/* PROJECTS */}
         <h2 className={styles.sectionTitle}>Works</h2>
         <section id="works" className={`${styles.section} ${styles.grid}`} ref={observe}>
-          {
+          {inView &&
             data.map(q =>
               <Project key={q.title} data={q} />
             )

@@ -50,20 +50,19 @@
   height: calc(100vh - 3rem);
   font-size: var(--font-larger);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   .introduction {
-    margin: 20px;
     color: black;
     span {
       color: var(--accent);
     }
   }
 
-  .profileWrap ul {
+  ul {
     border-radius: var(--border);
-    box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
     background-color: white;
+    box-shadow: 0 4px 25px rgba(14, 36, 49, 0.15);
   }
 }
 
@@ -72,6 +71,7 @@
     flex-direction: column;
     height: 100vh;
     justify-content: start;
+    margin: 0;
   }
   .sectionWrap {
     padding-top: 0;

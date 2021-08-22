@@ -27,7 +27,7 @@
 
 html,
 body {
-  scroll-padding-top: 150px;
+  scroll-padding-top: 120px;
 
   user-select: none;
   scroll-behavior: smooth;

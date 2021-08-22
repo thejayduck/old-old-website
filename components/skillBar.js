@@ -1,31 +1,27 @@
 import styles from '../styles/Skillbar.module.scss'
 import { motion } from "framer-motion"
 
-export default function SkillBar({ title, icon, percentage }) {
+export default function SkillBar({ data }) {
     return (
         <motion.div
             className={styles.skillWrap}
 
-            title={`${title} - ${percentage}%`}
+            title={`${data.title} - ${data.percentage}%`}
 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { delay: 0.5 } }}
         >
             <div className={styles.nameWrap}>
                 <i
-                    className={`${icon} ${styles.icon}`}
+                    className={`${data.icon} ${styles.icon}`}
                 />
-                <span className={styles.title}>{title}</span>
+                <span className={styles.title}>{data.title}</span>
             </div>
             <motion.div
                 className={styles.bar}
 
-                initial={{
-                    width: 0,
-                }}
-                animate={{
-                    width: `${percentage}%`
-                }}
+                initial={{ width: 0 }}
+                animate={{ width: `${data.percentage}%` }}
                 transition=
                 {{
                     type: "spring",
@@ -34,7 +30,7 @@ export default function SkillBar({ title, icon, percentage }) {
                 }}
             />
             <div>
-                <span className={styles.percentage}>{percentage}%</span>
+                <span className={styles.percentage}>{data.percentage}%</span>
             </div>
         </motion.div>
     );

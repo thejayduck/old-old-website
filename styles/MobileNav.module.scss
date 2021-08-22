@@ -29,10 +29,8 @@
     color: #000;
     text-decoration: none;
     padding: 7px 15px;
-    transition: 230ms ease-in-out;
 
     &:hover {
-      color: var(--accent);
       border-bottom: 3px var(--accent) solid;
     }
   }
