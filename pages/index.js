@@ -82,7 +82,7 @@ export default function Homepage({ data }) {
             <Image alt={"That's also me"} className={styles.image} src={"/profile_2.png"} width={320} height={420} />
           </div>
           <div>
-            <h2>Yup that's me, Arda Fevzi Armutcu</h2>
+            <h2>Yup that&apos;s me, Arda Fevzi Armutcu</h2>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Voluptate cum expedita quo culpa tempora, assumenda,
@@ -97,7 +97,7 @@ export default function Homepage({ data }) {
         <section id="skills" className={`${styles.section} ${styles.grid}`}>
           {inView &&
             skills.map(q =>
-              <SkillBar data={q} />
+              <SkillBar key={q} data={q} />
             )
           }
         </section>
