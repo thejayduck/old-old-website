@@ -1,6 +1,5 @@
 import styles from '../styles/Project.module.scss'
 
-import Image from 'next/image'
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 
@@ -28,12 +27,11 @@ export default function Project({ data }) {
             </div>
 
             <div className={styles.imageWrap}>
-                <Image
+                <img
                     className={styles.image}
                     alt={`${data.title} Cover`}
                     height={256}
                     width={500}
-                    objectFit="cover"
                     src={data.image}
 
                 />

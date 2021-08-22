@@ -2,7 +2,6 @@ import styles from "../styles/Home.module.scss"
 
 import PageContainer from "../components/pageContainer"
 
-import Image from 'next/image'
 import useInView from "react-cool-inview"
 import dynamic from 'next/dynamic'
 
@@ -67,7 +66,7 @@ export default function Homepage({ data }) {
             Programmer
           </h1>
           <div className={styles.profileWrap}>
-            <Image alt={"That's me"} src={"/profile.png"} width={400} height={400} />
+            <img alt={"That's me"} src={"/profile.png"} width={350} height={350} />
             <ul className={styles.social}>
               <li><a aria-label="Github" title="Github" href="https://github.com/thejayduck" rel="noreferrer"><i className='bx bxl-github' /></a></li>
               <li><a aria-label="E-Mail" title="E-Mail" href="mailto:ardafevzi.armutcu@gmail.com"><i className='bx bxs-envelope' /></a></li>
@@ -79,7 +78,7 @@ export default function Homepage({ data }) {
         <h2 className={styles.sectionTitle}>About</h2>
         <section id="about" className={`${styles.section} ${styles.grid}`}>
           <div className={styles.imageWrap}>
-            <Image alt={"That's also me"} className={styles.image} src={"/profile_2.png"} width={320} height={420} />
+            <img alt={"That's also me"} className={styles.image} src={"/profile_2.png"} width={320} height={420} />
           </div>
           <div>
             <h2>Yup that&apos;s me, Arda Fevzi Armutcu</h2>
