@@ -36,8 +36,8 @@
 
 .item {
   position: relative;
-  will-change: transform;
   .underline {
+    will-change: transform;
     position: absolute;
     top: -20px;
     left: -20px;
