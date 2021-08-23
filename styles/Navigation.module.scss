@@ -41,6 +41,7 @@
 .item {
   position: relative;
   .underline {
+    pointer-events: none;
     will-change: transform;
     position: absolute;
     top: -20px;
