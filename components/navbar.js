@@ -24,7 +24,7 @@ const navigationItems = [
 ]
 
 export default function Navigation({ onBurgerMenuClick }) {
-    const [selected, setSelected] = useState("");
+    const [selected, setSelected] = useState("home");
 
     return (
         <nav id="navbar" className={styles.nav}>
