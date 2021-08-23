@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
         <title>Arda Fevzi Armutcu</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Arda F. Armutcu's Personal Portfolio" />
+        <meta name="description" content="Arda Fevzi Armutcu's Portfolio" />
         <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet' />
         <link rel="preload" as="font" />
         <link rel="icon" href="/favicon.ico" />
