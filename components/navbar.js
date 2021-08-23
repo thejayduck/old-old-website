@@ -61,7 +61,7 @@ function NavigationItem({ label, anchor, isSelected, onClick }) {
 
                     layoutId="underline"
                     initial={false}
-                    transition={{ type: "spring", stiffness: 500, damping: 30 }}
+                    transition={{ stiffness: 500 }}
                 />
             )}
             <a aria-label={label} onClick={() => {
