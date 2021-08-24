@@ -45,6 +45,11 @@ const skills = [
     title: "Art",
     percentage: "50",
     icon: "bx bxs-pen",
+  },
+  {
+    title: "Story Writing",
+    percentage: "30",
+    icon: "bx bxs-book",
   }
 ]
 
@@ -83,10 +88,13 @@ export default function Homepage({ data }) {
           <div>
             <h2>Yup that&apos;s me, Arda Fevzi Armutcu</h2>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptate cum expedita quo culpa tempora, assumenda,
-              quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis!
-              Recusandae alias accusamus atque.
+              I always liked to explore and learn new skills although most end up being as hobbies.
+              <br />
+              I recently started using Next.js and loving it so far.
+              I am learning German to hopefully study at a German University.
+              <br />
+              I also enjoy reading a lot, well I've been into 'Light Novels' a lot more than western books.
+              My biggest projects are 'Novel Tracker' and a secret project which I am still planning.
             </p>
           </div>
         </section>
