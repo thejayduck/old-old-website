@@ -1,4 +1,4 @@
-import styles from '../styles/Navigation.module.scss'
+import styles from '@styles/Navigation.module.scss'
 
 import { scrollToAnchor } from '../pages/_app'
 import { AnimateSharedLayout, motion } from 'framer-motion';

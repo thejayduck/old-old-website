@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import '../styles/globals.css'
+import '@styles/globals.css'
 
 export function scrollToAnchor(hashId) {
   const element = document.querySelector(hashId);

@@ -1,12 +1,12 @@
-import styles from "../styles/Home.module.scss"
+import styles from "@styles/Home.module.scss"
 
-import PageContainer from "../components/pageContainer"
+import PageContainer from "@components/pageContainer"
 
 import useInView from "react-cool-inview"
 import dynamic from 'next/dynamic'
 
-const SkillBar = dynamic(() => import("../components/skillBar"))
-const Project = dynamic(() => import("../components/project"))
+const SkillBar = dynamic(() => import("@components/skillBar"))
+const Project = dynamic(() => import("@components/project"))
 
 export async function getStaticProps() {
   const res = await fetch('https://gist.githubusercontent.com/thejayduck/274ef60be752e3bcd3dc677dc3423933/raw')
