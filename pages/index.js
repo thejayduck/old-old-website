@@ -86,13 +86,13 @@ export default function Homepage({ data }) {
           <div>
             <h2>Yup that&apos;s me, Arda Fevzi Armutcu</h2>
             <p>
-              I always liked to explore and learn new skills although most end up being as hobbies.
+              I always liked to explore and learn new skills, although most end up being hobbies.
               <br />
               I recently started using Next.js and loving it so far.
-              I am learning German to hopefully study at a German University.
+              I am studying German to enroll in a German University.
               <br />
-              I also enjoy reading a lot, well I&apos;ve been into Light Novels a lot more than western books.
-              My biggest projects are Novel Tracker and a secret project which I am still planning.
+              Lately, I've been into Light Novels more than western books due to how unique the stories are.
+              Currently, my biggest projects are; Novel Tracker and a secret project which I am still planning.
             </p>
           </div>
         </section>
