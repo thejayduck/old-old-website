@@ -17,7 +17,7 @@ export default function Project({ data }) {
                                     aria-label={q.title}
                                     title={q.title}
                                     href={q.url}
-                                    className={q.icon}
+                                    className={`${q.icon} bx-tada-hover`}
                                     target="_blank"
                                     rel="noreferrer"
                                 />
