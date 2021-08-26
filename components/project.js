@@ -9,7 +9,7 @@ export default function Project({ data }) {
     return (
         <motion.div title={showDetails ? `${data.title} - Shrink Details` : `${data.title} - Expand Details`} onClick={() => setShowDetails(prev => !prev)} className={styles.projectWrap}>
             <div className={styles.social} >
-                <ul>
+                <ul onClick={(e) => e.stopPropagation()}>
                     {
                         data.links.map(q =>
                             <li key={q.title}>
