@@ -44,7 +44,7 @@ export default function PageContainer({ children }) {
                 className={styles.scrollUp}
                 title={"Scroll Up"}
             >
-                <a aria-label="Scroll Up" onClick={() => scrollToAnchor("#home")}>
+                <a onClick={() => scrollToAnchor("#home")}>
                     <i className={"bx bxs-up-arrow"} />
                 </a>
             </motion.div>
