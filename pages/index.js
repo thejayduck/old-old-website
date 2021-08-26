@@ -91,7 +91,7 @@ export default function Homepage({ data }) {
               I recently started using Next.js and loving it so far.
               I am studying German to enroll in a German University.
               <br />
-              Lately, I've been into Light Novels more than western books due to how unique the stories are.
+              Lately, I&apos;ve been into Light Novels more than western books due to how unique the stories are.
               Currently, my biggest projects are; Novel Tracker and a secret project which I am still planning.
             </p>
           </div>
