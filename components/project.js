@@ -7,7 +7,7 @@ export default function Project({ data }) {
     const [showDetails, setShowDetails] = useState(false);
 
     return (
-        <motion.div title={showDetails ? "Shrink Details" : "Expand Details"} onClick={() => setShowDetails(prev => !prev)} className={styles.projectWrap}>
+        <motion.div title={showDetails ? `${data.title} - Shrink Details` : `${data.title} - Expand Details`} onClick={() => setShowDetails(prev => !prev)} className={styles.projectWrap}>
             <div className={styles.social} >
                 <ul>
                     {
