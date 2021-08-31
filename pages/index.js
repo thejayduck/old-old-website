@@ -89,9 +89,11 @@ export default function Homepage({ data }) {
               I always liked to explore and learn new skills, although most end up being hobbies.
               <br />
               I recently started using Next.js and loving it so far.
+              <br />
               I am studying German to enroll in a German University.
               <br />
               Lately, I&apos;ve been into Light Novels more than western books due to how unique the stories are.
+              <br />
               Currently, my biggest projects are; Novel Tracker and a secret project which I am still planning.
             </p>
           </div>
