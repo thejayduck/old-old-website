@@ -69,7 +69,7 @@ export default function Homepage({ data }) {
             I am <span>Arda Fevzi</span>
           </h1>
           <div className={styles.profileWrap}>
-            <img alt={"That's me"} src={"/profileBlob.webp"} width={350} height={350} />
+            <img alt={"That's me"} src={"/profileBlob.png"} width={350} height={350} />
             <ul className={styles.social}>
               <li><a aria-label="Github" target="_blank" title="Github" href="https://github.com/thejayduck" rel="noreferrer"><i className='bx bxl-github' /></a></li>
               <li><a aria-label="E-Mail" title="E-Mail" href="mailto:ardafevzi.armutcu@gmail.com"><i className='bx bxs-envelope' /></a></li>
@@ -81,7 +81,7 @@ export default function Homepage({ data }) {
         <h2 className={styles.sectionTitle}>About</h2>
         <section id="about" className={`${styles.section} ${styles.grid}`}>
           <div className={styles.imageWrap}>
-            <img alt={"That's also me"} className={styles.image} src={"/profileLarge.webp"} width={320} height={420} />
+            <img alt={"That's also me"} className={styles.image} src={"/profileLarge.png"} width={320} height={420} />
           </div>
           <div>
             <h2>Yup that&apos;s me, Arda Fevzi Armutcu</h2>
