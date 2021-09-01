@@ -1,4 +1,4 @@
-import styles from '../styles/Skillbar.module.scss'
+import styles from '@styles/Skillbar.module.scss'
 import { motion } from "framer-motion"
 
 export default function SkillBar({ data }) {

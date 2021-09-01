@@ -1,14 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
 
 :root {
+  /* Fonts */
   --font-larger: 2.5em;
   --font-large: 2em;
   --font-medium: 1.5rem;
   --font-normal: 1rem;
   --font-small: 0.5rem;
-
-  --border: 10px;
-  --blur: 10px;
 
   /* Z Index */
   --z-back: -10;
@@ -16,13 +14,16 @@
   --z-front: 10;
   --z-fixed: 100;
 
-  /* --accent: hsl(281, 100%, 46%); */
+  /* Colors */
   --accent: hsl(248, 85%, 66%);
   --accent-dark: hsl(248, 85%, 60%);
   --primary: hsl(0, 0%, 100%, 0.5);
-  --footer: rgb(0, 0, 0);
-
+  --footer: hsl(0, 0%, 0%);
   /* #002233 #0066FF */
+
+  /* Other */
+  --border: 10px;
+  --blur: 10px;
 }
 
 html,

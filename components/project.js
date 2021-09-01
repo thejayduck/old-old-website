@@ -1,4 +1,4 @@
-import styles from '../styles/Project.module.scss'
+import styles from '@styles/Project.module.scss'
 
 import { useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -7,9 +7,9 @@ export default function Project({ data }) {
     const [showDetails, setShowDetails] = useState(false);
 
     return (
-        <motion.div title={showDetails ? "Shrink Details" : "Expand Details"} onClick={() => setShowDetails(prev => !prev)} className={styles.projectWrap}>
+        <motion.div title={showDetails ? `${data.title} - Shrink Details` : `${data.title} - Expand Details`} onClick={() => setShowDetails(prev => !prev)} className={styles.projectWrap}>
             <div className={styles.social} >
-                <ul>
+                <ul onClick={(e) => e.stopPropagation()}>
                     {
                         data.links.map(q =>
                             <li key={q.title}>
@@ -17,7 +17,7 @@ export default function Project({ data }) {
                                     aria-label={q.title}
                                     title={q.title}
                                     href={q.url}
-                                    className={q.icon}
+                                    className={`${q.icon} bx-tada-hover`}
                                     target="_blank"
                                     rel="noreferrer"
                                 />
@@ -53,7 +53,7 @@ export default function Project({ data }) {
                             initial={{ height: 0, opacity: 0 }}
                             animate={{ height: "max-content", opacity: 1 }}
                             exit={{ height: 0, opacity: 0 }}
-                            transition={{ type: "spring" }}
+                            transition={{ type: "spring", duration: 0.4 }}
                         >
                             <p>
                                 {data.description}

@@ -18,9 +18,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .linkWrap {
+      padding-right: 20px;
+    }
   }
 
-  .mobileNav {
+  .burgerNav {
     display: none;
   }
 
@@ -31,18 +35,28 @@
     text-decoration: none;
     padding: 7px 15px;
     font-weight: bold;
+  }
+}
 
-    &:hover {
-      border-bottom: 3px var(--accent) solid;
-    }
+.item {
+  position: relative;
+  .underline {
+    pointer-events: none;
+    will-change: transform;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    border-bottom: 3px solid var(--accent);
   }
 }
 
 @media screen and (max-width: 720px) {
-  .nav ul {
+  .nav .linkWrap {
     display: none;
   }
-  .nav .mobileNav {
+  .nav .burgerNav {
     display: initial;
   }
 }

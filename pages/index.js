@@ -1,12 +1,12 @@
-import styles from "../styles/Home.module.scss"
+import styles from "@styles/Home.module.scss"
 
-import PageContainer from "../components/pageContainer"
+import PageContainer from "@components/pageContainer"
 
 import useInView from "react-cool-inview"
 import dynamic from 'next/dynamic'
 
-const SkillBar = dynamic(() => import("../components/skillBar"))
-const Project = dynamic(() => import("../components/project"))
+const SkillBar = dynamic(() => import("@components/skillBar"))
+const Project = dynamic(() => import("@components/project"))
 
 export async function getStaticProps() {
   const res = await fetch('https://gist.githubusercontent.com/thejayduck/274ef60be752e3bcd3dc677dc3423933/raw')
@@ -45,6 +45,11 @@ const skills = [
     title: "Art",
     percentage: "50",
     icon: "bx bxs-pen",
+  },
+  {
+    title: "Story Writing",
+    percentage: "30",
+    icon: "bx bxs-book",
   }
 ]
 
@@ -61,12 +66,10 @@ export default function Homepage({ data }) {
           <h1 className={styles.introduction}>
             Hello!
             <br />
-            I am <span>Arda F.</span>
-            <br />
-            Programmer
+            I am <span>Arda Fevzi</span>
           </h1>
           <div className={styles.profileWrap}>
-            <img alt={"That's me"} src={"/profile.png"} width={350} height={350} />
+            <img alt={"That's me"} src={"/profileBlob.png"} width={350} height={350} />
             <ul className={styles.social}>
               <li><a aria-label="Github" target="_blank" title="Github" href="https://github.com/thejayduck" rel="noreferrer"><i className='bx bxl-github' /></a></li>
               <li><a aria-label="E-Mail" title="E-Mail" href="mailto:ardafevzi.armutcu@gmail.com"><i className='bx bxs-envelope' /></a></li>
@@ -78,15 +81,20 @@ export default function Homepage({ data }) {
         <h2 className={styles.sectionTitle}>About</h2>
         <section id="about" className={`${styles.section} ${styles.grid}`}>
           <div className={styles.imageWrap}>
-            <img alt={"That's also me"} className={styles.image} src={"/profile_2.png"} width={320} height={420} />
+            <img alt={"That's also me"} className={styles.image} src={"/profileLarge.png"} width={320} height={420} />
           </div>
           <div>
             <h2>Yup that&apos;s me, Arda Fevzi Armutcu</h2>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptate cum expedita quo culpa tempora, assumenda,
-              quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis!
-              Recusandae alias accusamus atque.
+              I always liked to explore and learn new skills, although most end up being hobbies.
+              <br />
+              I recently started using Next.js and loving it so far.
+              <br />
+              I am studying German to enroll in a German University.
+              <br />
+              Lately, I&apos;ve been into Light Novels more than western books due to how unique the stories are.
+              <br />
+              Currently, my biggest projects are; Novel Tracker and a secret project which I am still planning.
             </p>
           </div>
         </section>

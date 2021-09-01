@@ -1,8 +1,9 @@
-import styles from '../styles/PageContainer.module.scss'
+import styles from '@styles/PageContainer.module.scss'
 
 import Footer from './footer';
 import Navigation from './navbar';
 import MobileNav from './mobileNav';
+import { scrollToAnchor } from '../pages/_app'
 
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -43,7 +44,7 @@ export default function PageContainer({ children }) {
                 className={styles.scrollUp}
                 title={"Scroll Up"}
             >
-                <a aria-label="Scroll Up" href="#home">
+                <a onClick={() => scrollToAnchor("#home")}>
                     <i className={"bx bxs-up-arrow"} />
                 </a>
             </motion.div>
