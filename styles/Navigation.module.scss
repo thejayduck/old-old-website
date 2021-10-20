@@ -53,6 +53,10 @@
 }
 
 @media screen and (max-width: 720px) {
+  .nav {
+    background-color: var(--primary-opaque);
+    box-shadow: hsl(0, 0%, 84%) 0 5px 20px;
+  }
   .nav .linkWrap {
     display: none;
   }

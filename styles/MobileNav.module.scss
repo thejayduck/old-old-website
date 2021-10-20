@@ -13,8 +13,8 @@
 
   z-index: var(--z-front);
 
-  background-color: var(--primary);
-  backdrop-filter: blur(var(--blur));
+  background-color: var(--primary-opaque);
+  // backdrop-filter: blur(var(--blur));
 
   ul {
     display: flex;

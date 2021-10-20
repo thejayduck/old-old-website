@@ -18,6 +18,7 @@
   --accent: hsl(248, 85%, 66%);
   --accent-dark: hsl(248, 85%, 60%);
   --primary: hsl(0, 0%, 100%, 0.5);
+  --primary-opaque: hsl(0, 0%, 100%);
   --footer: hsl(0, 0%, 0%);
   /* #002233 #0066FF */
 
@@ -77,6 +78,40 @@ li {
 }
 li:hover {
   color: var(--accent);
+}
+
+// Flex
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  gap: 10px;
+}
+.flexRight {
+  justify-content: flex-start;
+}
+.flexLeft {
+  justify-content: flex-end;
+}
+.flexAround {
+  justify-content: space-around;
+}
+.flexEvenly {
+  justify-content: space-evenly;
+}
+.flexBetween {
+  justify-content: space-between;
+}
+.flexColumn {
+  flex-direction: column;
+}
+.flexRow {
+  flex-direction: row;
+}
+.flexWrap {
+  flex-wrap: wrap;
 }
 
 .bx {
