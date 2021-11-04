@@ -37,7 +37,7 @@ export default function Project({ data }) {
                 />
             </div>
             <motion.div
-                className={styles.showDetails}
+                className={`${styles.showDetails} desktop`}
 
                 initial={{ rotate: 0 }}
                 animate={{ rotate: showDetails ? 180 : 0 }}

@@ -118,6 +118,21 @@ li:hover {
   margin: 5px;
   font-size: var(--font-medium);
 }
+@media screen and (max-width: 1024px) {
+  *,
+  :before,
+  :after {
+    /*CSS transitions*/
+    transition-property: none !important;
+    /*CSS transforms*/
+    transform: none !important;
+    /*CSS animations*/
+    animation: none !important;
+  }
+  .desktop {
+    display: none;
+  }
+}
 
 * {
   box-sizing: border-box;
